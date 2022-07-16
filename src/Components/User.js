@@ -1,8 +1,8 @@
 function UserContainer(props) {
   return (
-    <div class="usuario">
-      <img src={props.img} />
-      <div class="texto">
+    <div className="usuario">
+      <img src={props.img} alt={`Imagem de ${props.user}`} />
+      <div className="texto">
         <strong>{props.user}</strong>
         {props.username}
       </div>

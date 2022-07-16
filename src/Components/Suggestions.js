@@ -1,15 +1,18 @@
 function SuggestionsContainer(props) {
   return (
-    <div class="sugestao">
-      <div class="usuario">
-        <img src={props.img} />
-        <div class="texto">
-          <div class="nome">{props.username}</div>
-          <div class="razao">{props.razao}</div>
+    <div className="sugestao">
+      <div className="usuario">
+        <img
+          src={`assets/img/${props.user}.svg`}
+          alt={`Imagem de ${props.user}`}
+        />
+        <div className="texto">
+          <div className="nome">{props.user}</div>
+          <div className="razao">{props.razao}</div>
         </div>
       </div>
 
-      <div class="seguir">Seguir</div>
+      <div className="seguir">Seguir</div>
     </div>
   );
 }
@@ -17,29 +20,24 @@ function SuggestionsContainer(props) {
 export default function Suggestions() {
   const suggestionsBox = [
     {
-      img: "assets/img/bad.vibes.memes.svg",
-      username: "bad.vibes.memes",
+      user: "bad.vibes.memes",
       razao: "Segue você",
     },
 
     {
-      img: "assets/img/chibirdart.svg",
-      username: "chibirdart",
+      user: "chibirdart",
       razao: "Segue você",
     },
     {
-      img: "assets/img/razoesparaacreditar.svg",
-      username: "razoesparaacreditar",
-      razao: "Segue você",
-    },
-    {
-      img: "assets/img/adorable_animals.svg",
-      username: "adorable_animals",
+      user: "razoesparaacreditar",
       razao: "Novo no Instagram",
     },
     {
-      img: "assets/img/smallcutecats.svg",
-      username: "smallcutecats",
+      user: "adorable_animals",
+      razao: "Segue você",
+    },
+    {
+      user: "smallcutecats",
       razao: "Segue você",
     },
   ];
@@ -47,11 +45,7 @@ export default function Suggestions() {
   return (
     <div>
       {suggestionsBox.map((value) => (
-        <SuggestionsContainer
-          img={value.img}
-          username={value.username}
-          razao={value.razao}
-        />
+        <SuggestionsContainer user={value.user} razao={value.razao} />
       ))}
     </div>
   );

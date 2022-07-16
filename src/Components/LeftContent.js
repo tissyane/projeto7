@@ -1,10 +1,10 @@
-import Posts from "./Posts";
+import Posts from "./Posts/Posts";
 import Stories from "./Stories";
 
 export default function LeftContent() {
   return (
     <div>
-      <div class="esquerda">
+      <div className="esquerda">
         <div>
           <Stories />
 

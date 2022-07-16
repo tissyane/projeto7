@@ -212,6 +212,13 @@ body {
   margin-bottom: 18px;
 }
 
+.acoes ion-icon[name=heart] {
+  fill: #e63342;
+  
+}
+
+
+
 .sidebar {
   padding-top: 24px;
   position: sticky;
