@@ -7,6 +7,7 @@ export default function LeftContent() {
       <div class="esquerda">
         <div>
           <Stories />
+
           <Posts />
         </div>
       </div>

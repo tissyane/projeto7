@@ -1,18 +1,18 @@
 import Suggestions from "./Suggestions";
+import User from "./User";
 
 export default function Sidebar() {
   return (
     <div>
       <div class="sidebar">
-        <div class="usuario">
-          <img src="assets/img/catanacomics.svg" />
-          <div class="texto">
-            <strong>catanacomics</strong>
-            Catana
+        <User />
+        <div class="sugestoes">
+          <div class="titulo">
+            Sugestões para você
+            <div>Ver tudo</div>
           </div>
+          <Suggestions />
         </div>
-
-        <Suggestions />
 
         <div class="links">
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
