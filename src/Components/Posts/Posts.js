@@ -10,7 +10,7 @@ export default function Posts() {
       likescount: "101.523",
       isVideo: false,
       userComment: "Paulinha",
-      commentText: "Gato e conectado",
+      commentText: "Gato e conectado 😻",
       commentsCount: "1.689",
     },
     {
@@ -21,7 +21,7 @@ export default function Posts() {
       likescount: "99.159",
       isVideo: false,
       userComment: "adorables_animals",
-      commentText: "Uauuuuuu!",
+      commentText: "Oiiinn que vontade de apertar",
       commentsCount: "3.241",
     },
     {
@@ -32,7 +32,7 @@ export default function Posts() {
       likescount: "99.159",
       isVideo: true,
       userComment: "Victor",
-      commentText: "Mais corajosos que o Victor",
+      commentText: "Mais corajosos que a Paulinha",
       commentsCount: "7.689",
     },
   ];
