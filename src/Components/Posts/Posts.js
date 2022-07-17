@@ -1,7 +1,4 @@
-import PostHeader from "./PostHeader";
-import PostImageAction from "./PostImage&Actions";
-import PostLikes from "./PostLikes";
-import PostVideo from "./PostVideo";
+import Post from "./PostGlobal";
 
 export default function Posts() {
   const postsBox = [
@@ -23,29 +20,18 @@ export default function Posts() {
     },
     {
       user: "barked",
-      content: "videos/video.mp4",
-      content_ogv: "videos/video.ogv",
+      video: "video",
       likeimg: "assets/img/adorable_animals.svg",
       likeuser: "adorable_animals",
       likescount: "99.159",
+      isVideo: true,
     },
   ];
 
   return (
     <div className="posts">
       {postsBox.map((value) => (
-        <div className="post">
-          <PostHeader user={value.user} />
-
-          <PostImageAction content={value.content} />
-          <div className="fundo">
-            <PostLikes
-              likeimg={value.likeimg}
-              likeuser={value.likeuser}
-              likescount={value.likescount}
-            />
-          </div>
-        </div>
+        <Post {...value} />
       ))}
     </div>
   );

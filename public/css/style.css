@@ -213,11 +213,9 @@ body {
 }
 
 .acoes ion-icon[name=heart] {
-  fill: #e63342;
+  color: #e63342;
   
 }
-
-
 
 .sidebar {
   padding-top: 24px;
@@ -242,6 +240,10 @@ body {
   margin-left: 14px;
   font-weight: 300;
   color: #8E8E8E;
+}
+
+video {
+  width: 100%;
 }
 
 .sidebar > .usuario .texto strong {
@@ -396,5 +398,9 @@ body {
   .instagram-mobile {
     position: relative;
     top: 4px;
+  }
+
+  video {
+    width: 612px;
   }
 }

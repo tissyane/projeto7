@@ -45,7 +45,7 @@ export default function Suggestions() {
   return (
     <div>
       {suggestionsBox.map((value) => (
-        <SuggestionsContainer user={value.user} razao={value.razao} />
+        <SuggestionsContainer {...value} />
       ))}
     </div>
   );
