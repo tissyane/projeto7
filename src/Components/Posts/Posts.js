@@ -1,4 +1,4 @@
-import Post from "./PostGlobal";
+import Post from "./Post";
 
 export default function Posts() {
   const postsBox = [
@@ -9,6 +9,9 @@ export default function Posts() {
       likeuser: "respondeai",
       likescount: "101.523",
       isVideo: false,
+      userComment: "Paulinha",
+      commentText: "Gato e conectado",
+      commentsCount: "1.689",
     },
     {
       user: "barked",
@@ -17,6 +20,9 @@ export default function Posts() {
       likeuser: "adorable_animals",
       likescount: "99.159",
       isVideo: false,
+      userComment: "adorables_animals",
+      commentText: "Uauuuuuu!",
+      commentsCount: "3.241",
     },
     {
       user: "barked",
@@ -25,6 +31,9 @@ export default function Posts() {
       likeuser: "adorable_animals",
       likescount: "99.159",
       isVideo: true,
+      userComment: "Victor",
+      commentText: "Mais corajosos que o Victor",
+      commentsCount: "7.689",
     },
   ];
 

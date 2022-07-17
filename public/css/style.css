@@ -198,7 +198,7 @@ body {
 .post .fundo .curtidas {
   display: flex;
   align-items: center;
-  padding: 0 16px 13px;
+  padding: 0 16px 0px;
   font-weight: 300;
 }
 
@@ -317,6 +317,80 @@ video {
 
 .logo-mobile, .instagram-mobile {
   display: none !important;
+}
+
+.comments {
+  
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.comments-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 18px;
+  padding-right: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.comments-list ion-icon[name=heart] {
+  color: #e63342;
+  
+}
+
+.post-comments {
+  height: 50px;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 8px;
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-comments div {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+
+}
+
+.post-comments input {
+  font-size: 14px;
+  color: #222;
+  border: none;
+  background-color: #FAFAFA;
+}
+
+.post-comments input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #FAFAFA;
+  border: none;
+  color: #b2dffc;
+  transition: all 300ms;
+  margin-left: 10px;
+}
+
+button:hover {
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.comments_title {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #8e8e8e;
+}
+
+.comments_title:hover {
+  color: #dfdfdf;
+  transition: 300ms;
 }
 
 @media (max-width: 935px) {
