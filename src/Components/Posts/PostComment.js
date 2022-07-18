@@ -5,13 +5,13 @@ export default function PostComment(props) {
 
   return (
     <>
-      <div class="comments-list">
+      <div className="comments-list">
         <div>
           <p>
             <strong>{props.userComment}</strong> {props.commentText}
           </p>
         </div>
-        <div class="buttonlike">
+        <div className="buttonlike">
           <ion-icon
             name={heart}
             onClick={() => {

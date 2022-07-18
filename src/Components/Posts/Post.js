@@ -5,7 +5,7 @@ import PostLikes from "./PostLikes";
 import PostVideo from "./PostVideo";
 import React from "react";
 import PostComment from "./PostComment";
-import PostNewComment from "../PostNewComment";
+import PostNewComment from "./PostNewComment";
 
 export default function Post(props) {
   const [heart, setHeart] = React.useState("heart-outline");
@@ -14,7 +14,7 @@ export default function Post(props) {
     <div className="post">
       <PostHeader {...props} />
       {props.isVideo ? (
-        <PostVideo {...props} />
+        <PostVideo {...props} heart={heart} setHeart={setHeart} />
       ) : (
         <PostImage {...props} heart={heart} setHeart={setHeart} />
       )}
@@ -23,7 +23,7 @@ export default function Post(props) {
         <PostActions {...props} heart={heart} setHeart={setHeart} />
         <PostLikes {...props} />
 
-        <div class="comments">
+        <div className="comments">
           <div>
             <p className="comments_title">
               Ver todos os {props.commentsCount} comentários

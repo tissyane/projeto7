@@ -1,5 +1,5 @@
-import Posts from "./Posts/Posts";
-import Stories from "./Stories";
+import Posts from "../Posts/Posts";
+import Stories from "../Stories";
 
 export default function LeftContent() {
   return (
@@ -7,7 +7,6 @@ export default function LeftContent() {
       <div className="esquerda">
         <div>
           <Stories />
-
           <Posts />
         </div>
       </div>

@@ -1,7 +1,16 @@
 export default function PostVideo(props) {
   return (
     <div className="conteudo">
-      <video autoPlay muted controls>
+      <video
+        autoPlay
+        muted
+        controls
+        onClick={() => {
+          if (props.heart === "heart-outline") {
+            props.setHeart("heart");
+          }
+        }}
+      >
         <source
           src={`assets/video/${props.video}.mp4`}
           alt="Vídeo do post"

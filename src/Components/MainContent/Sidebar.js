@@ -1,5 +1,5 @@
-import Suggestions from "./Suggestions";
-import User from "./User";
+import Suggestions from "../Sidebar/Suggestions";
+import User from "../Sidebar/User";
 
 export default function Sidebar() {
   return (

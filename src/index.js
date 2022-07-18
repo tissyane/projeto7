@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom";
 
-import NavBar from "./Components/NavBar";
-import Content from "./Components/Content";
-import MobileFooter from "./Components/MobileFooter";
+import NavBar from "./Components/NavbarFooter/NavBar";
+import Content from "./Components/MainContent/Content";
+import MobileFooter from "./Components/NavbarFooter/MobileFooter";
 
 function App() {
   return (
